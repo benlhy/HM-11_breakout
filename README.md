@@ -1,9 +1,9 @@
 # HM-11 BLE module breakout board
-Eagle PCB files for a HM-11 Bluetooth Low Energy module, breakout board. Based on the work by [Genoil](https://github.com/Genoil/smartwatch).
+Eagle PCB files for a HM-11/JDY-08 Bluetooth Low Energy module, breakout board. Based on the work by [platisd](https://github.com/platisd/HM-11_breakout). 
 
-Order it directly from [OSH Park](https://oshpark.com/shared_projects/1uC5vV5p) (3.25$ for 3 boards).
+This board only breaks out the power, TX and RX pins. I added an additional capacitor on the power line.
 
-Read the story behind it at my [blog](https://platis.solutions/blog/2015/06/11/breakout-board-hm-11-ble/), where you will also find other useful resources such as links to code for a sample Android application.
+This board was designed to be an Arduino compatible bluetooth board. See the full story of how I made the board at my [blog](http://westsideelectronics.com/building-a-hm-11-bluetooth-board/).
 
 ## Board renders
 ![Front](http://i.imgur.com/6OrpiIM.png) ![Rear](http://i.imgur.com/9zW63uq.png)
