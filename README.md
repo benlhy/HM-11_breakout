@@ -6,4 +6,4 @@ This board only breaks out the power, TX and RX pins. I added an additional capa
 This board was designed to be an Arduino compatible bluetooth board. See the full story of how I made the board at my [blog](http://westsideelectronics.com/building-a-hm-11-bluetooth-board/).
 
 ## Board renders
-![Front](http://i.imgur.com/6OrpiIM.png) ![Rear](http://i.imgur.com/9zW63uq.png)
+![](http://westsideelectronics.com/content/images/2017/12/boardz.JPG)
