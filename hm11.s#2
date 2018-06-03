@@ -140,6 +140,94 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
+<library name="hm-11">
+<packages>
+<package name="HM-11">
+<smd name="GND" x="6.5" y="0" dx="2.4" dy="0.9" layer="1"/>
+<smd name="PIO3" x="6.5" y="1.5" dx="2.4" dy="0.9" layer="1"/>
+<smd name="PIO2" x="6.5" y="3" dx="2.4" dy="0.9" layer="1"/>
+<smd name="RESETB" x="6.5" y="-1.5" dx="2.4" dy="0.9" layer="1"/>
+<smd name="NC@10" x="6.5" y="-3" dx="2.4" dy="0.9" layer="1"/>
+<smd name="PIO1" x="6.5" y="4.5" dx="2.4" dy="0.9" layer="1"/>
+<smd name="PIO0" x="6.5" y="6" dx="2.4" dy="0.9" layer="1"/>
+<smd name="VCC" x="6.5" y="-4.5" dx="2.4" dy="0.9" layer="1"/>
+<smd name="NC@5" x="-7" y="0" dx="2.4" dy="0.9" layer="1"/>
+<smd name="NC@6" x="-7" y="-1.5" dx="2.4" dy="0.9" layer="1"/>
+<smd name="NC@7" x="-7" y="-3" dx="2.4" dy="0.9" layer="1"/>
+<smd name="NC@8" x="-7" y="-4.5" dx="2.4" dy="0.9" layer="1"/>
+<smd name="UART_RX" x="-7" y="1.5" dx="2.4" dy="0.9" layer="1"/>
+<smd name="UART_CTS" x="-7" y="3" dx="2.4" dy="0.9" layer="1"/>
+<smd name="UART_TX" x="-7" y="4.5" dx="2.4" dy="0.9" layer="1"/>
+<smd name="UART_RTS" x="-7" y="6" dx="2.4" dy="0.9" layer="1"/>
+<wire x1="-7" y1="-5.5" x2="6.5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-5.5" x2="6.5" y2="13" width="0.127" layer="21"/>
+<wire x1="6.5" y1="13" x2="-7" y2="13" width="0.127" layer="21"/>
+<wire x1="-7" y1="13" x2="-7" y2="-5.5" width="0.127" layer="21"/>
+<text x="-6.5" y="11" size="1.27" layer="25">HM-11</text>
+</package>
+</packages>
+<symbols>
+<symbol name="HM-11">
+<wire x1="-17.78" y1="-22.86" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-22.86" x2="20.32" y2="22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="22.86" x2="-17.78" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="22.86" x2="-17.78" y2="-22.86" width="0.254" layer="94"/>
+<pin name="UART_RTS" x="-22.86" y="17.78" visible="pin" length="middle"/>
+<pin name="UART_TX" x="-22.86" y="12.7" visible="pin" length="middle"/>
+<pin name="UART_CTS" x="-22.86" y="7.62" visible="pin" length="middle"/>
+<pin name="UART_RX" x="-22.86" y="2.54" visible="pin" length="middle"/>
+<pin name="NC@5" x="-22.86" y="-2.54" visible="pin" length="middle"/>
+<pin name="NC@6" x="-22.86" y="-7.62" visible="pin" length="middle"/>
+<pin name="NC@7" x="-22.86" y="-12.7" visible="pin" length="middle"/>
+<pin name="NC@8" x="-22.86" y="-17.78" visible="pin" length="middle"/>
+<pin name="VCC" x="25.4" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="NC@10" x="25.4" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="RESETB" x="25.4" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="25.4" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="PIO3" x="25.4" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="PIO2" x="25.4" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="PIO1" x="25.4" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="PIO0" x="25.4" y="17.78" visible="pin" length="middle" rot="R180"/>
+<text x="-2.54" y="20.32" size="1.27" layer="94">HM-11</text>
+<text x="-2.54" y="-20.32" size="1.27" layer="94">HM-11</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="HM-11">
+<description>JNHuaMao HM-11 Bluetooth 4.0 Transceiver
+
+based on TI CC2540/CC2541</description>
+<gates>
+<gate name="G$1" symbol="HM-11" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HM-11">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="NC@10" pad="NC@10"/>
+<connect gate="G$1" pin="NC@5" pad="NC@5"/>
+<connect gate="G$1" pin="NC@6" pad="NC@6"/>
+<connect gate="G$1" pin="NC@7" pad="NC@7"/>
+<connect gate="G$1" pin="NC@8" pad="NC@8"/>
+<connect gate="G$1" pin="PIO0" pad="PIO0"/>
+<connect gate="G$1" pin="PIO1" pad="PIO1"/>
+<connect gate="G$1" pin="PIO2" pad="PIO2"/>
+<connect gate="G$1" pin="PIO3" pad="PIO3"/>
+<connect gate="G$1" pin="RESETB" pad="RESETB"/>
+<connect gate="G$1" pin="UART_CTS" pad="UART_CTS"/>
+<connect gate="G$1" pin="UART_RTS" pad="UART_RTS"/>
+<connect gate="G$1" pin="UART_RX" pad="UART_RX"/>
+<connect gate="G$1" pin="UART_TX" pad="UART_TX"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 <library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
@@ -1339,89 +1427,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="hm-11">
-<packages>
-<package name="JDC08">
-<wire x1="-7" y1="-8.04" x2="6.5" y2="-8.04" width="0.127" layer="21"/>
-<wire x1="6.5" y1="-8.04" x2="6.5" y2="10.46" width="0.127" layer="21"/>
-<wire x1="6.5" y1="10.46" x2="-7" y2="10.46" width="0.127" layer="21"/>
-<wire x1="-7" y1="10.46" x2="-7" y2="-8.04" width="0.127" layer="21"/>
-<smd name="RX" x="6.5" y="-2.54" dx="2.4" dy="0.9" layer="1"/>
-<smd name="P17" x="-7" y="-2.54" dx="2.4" dy="0.9" layer="1"/>
-<smd name="P16" x="-7" y="-4.04" dx="2.4" dy="0.9" layer="1"/>
-<smd name="PWM" x="-7" y="-5.54" dx="2.4" dy="0.9" layer="1"/>
-<smd name="LED" x="-7" y="-7.04" dx="2.4" dy="0.9" layer="1"/>
-<smd name="P04" x="6.5" y="-5.54" dx="2.4" dy="0.9" layer="1"/>
-<smd name="GND" x="6.5" y="3.46" dx="2.4" dy="0.9" layer="1"/>
-<smd name="RESET" x="6.5" y="1.96" dx="2.4" dy="0.9" layer="1"/>
-<smd name="AT" x="6.5" y="0.46" dx="2.4" dy="0.9" layer="1"/>
-<smd name="PO1" x="6.5" y="-1.04" dx="2.4" dy="0.9" layer="1"/>
-<smd name="TX" x="6.5" y="-4.04" dx="2.4" dy="0.9" layer="1"/>
-<smd name="DEBUG_DAT" x="-7" y="0.46" dx="2.4" dy="0.9" layer="1"/>
-<smd name="VCC" x="-7" y="3.46" dx="2.4" dy="0.9" layer="1"/>
-<smd name="NC" x="-7" y="-1.04" dx="2.4" dy="0.9" layer="1"/>
-<smd name="DEBUG_CLK" x="-7" y="1.96" dx="2.4" dy="0.9" layer="1"/>
-<smd name="P05" x="6.5" y="-7.04" dx="2.4" dy="0.9" layer="1"/>
-<text x="-6.5" y="8.46" size="1.27" layer="25" font="vector">JDR08</text>
-</package>
-</packages>
-<symbols>
-<symbol name="JDR08">
-<wire x1="-10.16" y1="20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
-<wire x1="15.24" y1="20.32" x2="15.24" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-22.86" x2="-10.16" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-22.86" x2="-10.16" y2="20.32" width="0.254" layer="94"/>
-<pin name="VCC" x="-15.24" y="17.78" visible="pin" length="middle"/>
-<pin name="DEBUGCLK" x="-15.24" y="12.7" visible="pin" length="middle"/>
-<pin name="DEBUGDAT" x="-15.24" y="7.62" visible="pin" length="middle"/>
-<pin name="NC" x="-15.24" y="2.54" visible="pin" length="middle"/>
-<pin name="P16" x="-15.24" y="-2.54" visible="pin" length="middle"/>
-<pin name="P17" x="-15.24" y="-7.62" visible="pin" length="middle"/>
-<pin name="GND" x="20.32" y="17.78" visible="pin" length="middle" rot="R180"/>
-<pin name="RESET" x="20.32" y="12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="AT" x="20.32" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="P01" x="20.32" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="RX" x="20.32" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="TX" x="20.32" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="PWM" x="-15.24" y="-12.7" visible="pin" length="middle"/>
-<pin name="P04" x="20.32" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="LED" x="-15.24" y="-17.78" visible="pin" length="middle"/>
-<pin name="P05" x="20.32" y="-17.78" visible="pin" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="JDR08">
-<gates>
-<gate name="G$1" symbol="JDR08" x="-5.08" y="-7.62"/>
-</gates>
-<devices>
-<device name="" package="JDC08">
-<connects>
-<connect gate="G$1" pin="AT" pad="AT"/>
-<connect gate="G$1" pin="DEBUGCLK" pad="DEBUG_CLK"/>
-<connect gate="G$1" pin="DEBUGDAT" pad="DEBUG_DAT"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="LED" pad="LED"/>
-<connect gate="G$1" pin="NC" pad="NC"/>
-<connect gate="G$1" pin="P01" pad="PO1"/>
-<connect gate="G$1" pin="P04" pad="P04"/>
-<connect gate="G$1" pin="P05" pad="P05"/>
-<connect gate="G$1" pin="P16" pad="P16"/>
-<connect gate="G$1" pin="P17" pad="P17"/>
-<connect gate="G$1" pin="PWM" pad="PWM"/>
-<connect gate="G$1" pin="RESET" pad="RESET"/>
-<connect gate="G$1" pin="RX" pad="RX"/>
-<connect gate="G$1" pin="TX" pad="TX"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1432,112 +1437,91 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <parts>
+<part name="U$1" library="hm-11" deviceset="HM-11" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M06" device="SIP"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
-<part name="U$1" library="hm-11" deviceset="JDR08" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
+<instance part="U$1" gate="G$1" x="68.58" y="45.72"/>
 <instance part="JP1" gate="G$1" x="71.12" y="-5.08" rot="R90"/>
 <instance part="C1" gate="G$1" x="91.44" y="-7.62"/>
-<instance part="U$1" gate="G$1" x="68.58" y="33.02"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$7" class="0">
+<net name="N$4" class="0">
 <segment>
-<wire x1="121.92" y1="25.4" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PIO1"/>
+<wire x1="93.98" y1="58.42" x2="106.68" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="58.42" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="76.2" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="2.54" x2="68.58" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="4"/>
+<wire x1="68.58" y1="0" x2="68.58" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="50.8" y1="55.88" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="6"/>
-<wire x1="63.5" y1="0" x2="63.5" y2="5.08" width="0.1524" layer="91"/>
-<label x="60.96" y="5.08" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="53.34" y1="50.8" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
-<label x="45.72" y="50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
+<wire x1="93.98" y1="27.94" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="27.94" x2="106.68" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="2.54" x2="93.98" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="2.54" x2="76.2" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="2.54" x2="76.2" y2="0" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="-2.54" x2="91.44" y2="2.54" width="0.1524" layer="91"/>
-<label x="91.44" y="0" size="1.778" layer="95" rot="R90"/>
+<wire x1="93.98" y1="2.54" x2="91.44" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="2.54" x2="91.44" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="AT" class="0">
+<net name="N$6" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="AT"/>
-<wire x1="88.9" y1="40.64" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
-<label x="91.44" y="40.64" size="1.778" layer="95"/>
-</segment>
-<segment>
+<pinref part="U$1" gate="G$1" pin="RESETB"/>
+<wire x1="93.98" y1="38.1" x2="104.14" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="38.1" x2="104.14" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="5.08" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
 <wire x1="71.12" y1="0" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
-<label x="71.12" y="0" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="88.9" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
-<label x="91.44" y="50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="5"/>
-<wire x1="66.04" y1="0" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
-<label x="66.04" y="0" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="-10.16" x2="91.44" y2="-15.24" width="0.1524" layer="91"/>
-<label x="91.44" y="-15.24" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="RX" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="RX"/>
-<wire x1="88.9" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
-<label x="93.98" y="30.48" size="1.778" layer="95"/>
-</segment>
-<segment>
+<wire x1="93.98" y1="43.18" x2="101.6" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="43.18" x2="101.6" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="7.62" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="0" x2="73.66" y2="5.08" width="0.1524" layer="91"/>
-<label x="73.66" y="0" size="1.778" layer="95" rot="R90"/>
+<wire x1="86.36" y1="7.62" x2="73.66" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="7.62" x2="73.66" y2="0" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="-10.16" x2="86.36" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-10.16" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
+<junction x="86.36" y="7.62"/>
 </segment>
 </net>
-<net name="TX" class="0">
+<net name="N$3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="TX"/>
-<wire x1="88.9" y1="25.4" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
-<label x="93.98" y="25.4" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="0" x2="76.2" y2="5.08" width="0.1524" layer="91"/>
-<label x="76.2" y="0" size="1.778" layer="95" rot="R90"/>
+<pinref part="U$1" gate="G$1" pin="UART_TX"/>
+<wire x1="45.72" y1="58.42" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="58.42" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="12.7" x2="66.04" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="5"/>
+<wire x1="66.04" y1="0" x2="66.04" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RESET" class="0">
+<net name="N$5" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="4"/>
-<wire x1="68.58" y1="0" x2="68.58" y2="5.08" width="0.1524" layer="91"/>
-<label x="68.58" y="0" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="RESET"/>
-<wire x1="88.9" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
-<label x="91.44" y="45.72" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="UART_RX"/>
+<wire x1="45.72" y1="48.26" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="48.26" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="10.16" x2="63.5" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="6"/>
+<wire x1="63.5" y1="0" x2="63.5" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
